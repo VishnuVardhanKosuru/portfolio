@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vishnu Vardhan Kosuru — Software Engineer</title>
+    <meta name="description"
+        content="Portfolio of Vishnu Vardhan Kosuru — Associate Software Engineer specializing in GCP, Terraform, Python, FastAPI, and DevOps." />
+    <meta name="keywords"
+        content="Vishnu Vardhan Kosuru, Software Engineer, GCP, Terraform, Python, FastAPI, DevOps, Portfolio" />
+    <meta property="og:title" content="Vishnu Vardhan Kosuru — Software Engineer" />
+    <meta property="og:description" content="Associate Software Engineer | GCP | Terraform | Python | DevOps" />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles/main.css" />
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">VVK<span class="dot">.</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#publications">Research</a></li>
+                <li><a href="#certifications">Certs</a></li>
+                <li><a href="#contact" class="nav-cta">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <canvas id="particleCanvas"></canvas>
+        <div class="hero-content">
+            <div class="hero-badge reveal-up">
+                <span class="badge-dot"></span>
+                Available for opportunities
+            </div>
+            <h1 class="hero-name reveal-up">
+                Vishnu Vardhan<br /><span class="gradient-text">Kosuru</span>
+            </h1>
+            <p class="hero-title reveal-up">
+                <span id="typingText"></span><span class="cursor">|</span>
+            </p>
+            <p class="hero-bio reveal-up">
+                Associate Software Engineer crafting scalable solutions across backend, cloud, and DevOps.
+                Passionate about building things that matter — reliably, efficiently, and at scale.
+            </p>
+            <div class="hero-actions reveal-up">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+            </div>
+            <div class="hero-stats reveal-up">
+                <div class="stat">
+                    <span class="stat-num" data-target="6">0</span>
+                    <span class="stat-label">Certifications</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-num" data-target="3">0</span>
+                    <span class="stat-label">Publications</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-num" id="github-repo-count" data-target="2">—</span>
+                    <span class="stat-label">GitHub Repos</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-hint">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">Who I Am</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text reveal-left">
+                    <p>
+                        I'm an <strong>Associate Software Engineer</strong> with a strong foundation in designing,
+                        building, and supporting scalable software solutions. With hands-on experience at
+                        <strong>Quantiphi Analytics</strong>, I've worked across backend development, cloud
+                        technologies, and modern DevOps workflows.
+                    </p>
+                    <p>
+                        I thrive on understanding business requirements, delivering reliable code on time, and adapting
+                        quickly to new tools and technologies. Known for strong problem-solving abilities, clear
+                        communication, and a collaborative mindset.
+                    </p>
+                    <p>
+                        Excited to contribute to dynamic teams and grow across backend, cloud, and full-stack
+                        engineering roles.
+                    </p>
+                    <div class="about-links">
+                        <a href="mailto:vishnu4916@gmail.com" class="about-link">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                            vishnu4916@gmail.com
+                        </a>
+                        <a href="https://www.linkedin.com/in/vishnuvardhan4916/" target="_blank" rel="noopener"
+                            class="about-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                <rect x="2" y="9" width="4" height="12" />
+                                <circle cx="4" cy="4" r="2" />
+                            </svg>
+                            LinkedIn
+                        </a>
+                        <a href="https://github.com/VishnuVardhanKosuru" target="_blank" rel="noopener"
+                            class="about-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                            </svg>
+                            GitHub
+                        </a>
+                        <span class="about-link phone-link">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.29 6.29l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+                            </svg>
+                            +91 7207463047
+                        </span>
+                    </div>
+                </div>
+                <div class="about-card-wrap reveal-right">
+                    <div class="about-card glass-card">
+                        <div class="about-avatar">
+                            <div class="avatar-ring"></div>
+                            <div class="avatar-inner">
+                                <img src="assets/profile.jpg" alt="Vishnu Vardhan Kosuru" class="avatar-photo" />
+                            </div>
+                        </div>
+                        <div class="about-info">
+                            <h3>Vishnu Vardhan Kosuru</h3>
+                            <p>Associate Software Engineer</p>
+                            <div class="about-edu">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                                    <path d="M6 12v5c3 3 9 3 12 0v-5" />
+                                </svg>
+                                <div>
+                                    <strong>B.Tech — CSE</strong>
+                                    <span>Amrita Vishwa Vidyapeetham</span>
+                                    <span>GPA: 8.28</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section section-dark">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">Career</span>
+                <h2 class="section-title">Experience</h2>
+            </div>
+            <div class="timeline">
+
+                <div class="timeline-item reveal-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Framework Engineer</h3>
+                                <a href="https://www.quantiphi.com" target="_blank" rel="noopener"
+                                    class="company-link">Quantiphi Analytics</a>
+                            </div>
+                            <span class="timeline-date">Jul 2025 – Present</span>
+                        </div>
+                        <ul class="timeline-bullets">
+                            <li>Contributed to backend development by completing assigned features, resolving critical
+                                defects, and improving service reliability across multiple microservices.</li>
+                            <li>Diagnosed and traced production and cloud-related issues using <strong>GCP Logging,
+                                    Error Reporting, and Monitoring</strong>, reducing debugging time by nearly
+                                <strong>50%</strong>.
+                            </li>
+                            <li>Implemented robust data validation and <strong>reCAPTCHA mechanisms</strong>,
+                                eliminating data leakage in logs and improving input security by <strong>97%</strong>.
+                            </li>
+                            <li>Managed and executed deployments across <strong>QA, UAT, and Production</strong>
+                                environments, ensuring 100% smooth and timely releases.</li>
+                            <li>Worked closely with teammates and senior engineers to refine requirements and maintain
+                                workflow alignment, increasing team delivery efficiency by <strong>45%</strong>.</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">GCP</span><span class="tag">Microservices</span><span
+                                class="tag">CI/CD</span><span class="tag">Python</span><span
+                                class="tag">reCAPTCHA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Framework Engineer — Intern</h3>
+                                <a href="https://www.quantiphi.com" target="_blank" rel="noopener"
+                                    class="company-link">Quantiphi Analytics</a>
+                            </div>
+                            <span class="timeline-date">Jan 2025 – Jun 2025</span>
+                        </div>
+                        <ul class="timeline-bullets">
+                            <li>Gained hands-on exposure to <strong>Google Cloud Platform (GCP)</strong> services —
+                                cloud fundamentals, environment setup, logging, monitoring, and deployment workflows.
+                            </li>
+                            <li>Built a strong foundation in <strong>Infrastructure as Code (IaC)</strong> by working
+                                with Terraform scripts, enabling better understanding of resource provisioning and cloud
+                                automation.</li>
+                            <li>Completed <strong>Google Associate Cloud Engineer</strong> and <strong>Terraform
+                                    Associate</strong> certifications during the internship.</li>
+                            <li>Contributed to the project planning team by researching potential solution approaches,
+                                evaluating feasibility, and documenting findings.</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tag">GCP</span><span class="tag">Terraform</span><span
+                                class="tag">IaC</span><span class="tag">Linux</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">Expertise</span>
+                <h2 class="section-title">Technical Skills</h2>
+            </div>
+            <div class="skills-grid">
+
+                <div class="skill-category glass-card reveal-up">
+                    <div class="skill-cat-header">
+                        <div class="skill-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="16 18 22 12 16 6" />
+                                <polyline points="8 6 2 12 8 18" />
+                            </svg>
+                        </div>
+                        <h3>Languages</h3>
+                    </div>
+                    <div class="skill-bars">
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-label"><span>Python</span><span>90%</span></div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-label"><span>C++</span><span>80%</span></div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-label"><span>SQL</span><span>75%</span></div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-card reveal-up">
+                    <div class="skill-cat-header">
+                        <div class="skill-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="3" width="20" height="14" rx="2" />
+                                <line x1="8" y1="21" x2="16" y2="21" />
+                                <line x1="12" y1="17" x2="12" y2="21" />
+                            </svg>
+                        </div>
+                        <h3>Frameworks & Tools</h3>
+                    </div>
+                    <div class="skill-pills">
+                        <span class="pill">FastAPI</span>
+                        <span class="pill">Docker</span>
+                        <span class="pill">Kubernetes</span>
+                        <span class="pill">GitHub Actions</span>
+                        <span class="pill">Jupyter</span>
+                        <span class="pill">VS Code</span>
+                        <span class="pill">Unity</span>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-card reveal-up">
+                    <div class="skill-cat-header">
+                        <div class="skill-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z" />
+                            </svg>
+                        </div>
+                        <h3>Cloud & DevOps</h3>
+                    </div>
+                    <div class="skill-bars">
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-label"><span>Google Cloud (GCP)</span><span>88%</span></div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="88"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-label"><span>Terraform</span><span>85%</span></div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-label"><span>CI/CD</span><span>80%</span></div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-label"><span>Linux Shell Scripting</span><span>75%</span></div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-card reveal-up">
+                    <div class="skill-cat-header">
+                        <div class="skill-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M12 8v4l3 3" />
+                            </svg>
+                        </div>
+                        <h3>AI / ML</h3>
+                    </div>
+                    <div class="skill-pills">
+                        <span class="pill">Prompt Engineering</span>
+                        <span class="pill">Gemini API</span>
+                        <span class="pill">Claude</span>
+                        <span class="pill">ChatGPT</span>
+                        <span class="pill">MobileNetV2</span>
+                        <span class="pill">Deep Learning</span>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-card reveal-up">
+                    <div class="skill-cat-header">
+                        <div class="skill-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <ellipse cx="12" cy="5" rx="9" ry="3" />
+                                <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+                                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+                            </svg>
+                        </div>
+                        <h3>Databases</h3>
+                    </div>
+                    <div class="skill-pills">
+                        <span class="pill">PostgreSQL</span>
+                        <span class="pill">SQLite</span>
+                        <span class="pill">MongoDB</span>
+                    </div>
+                </div>
+
+                <div class="skill-category glass-card reveal-up">
+                    <div class="skill-cat-header">
+                        <div class="skill-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                <circle cx="9" cy="7" r="4" />
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                            </svg>
+                        </div>
+                        <h3>Soft Skills</h3>
+                    </div>
+                    <div class="skill-pills">
+                        <span class="pill">Communication</span>
+                        <span class="pill">Presentation</span>
+                        <span class="pill">Leadership</span>
+                        <span class="pill">Organization</span>
+                        <span class="pill">Collaboration</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section section-dark">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">Work</span>
+                <h2 class="section-title">Projects</h2>
+            </div>
+            <div class="projects-grid">
+
+                <div class="project-card glass-card reveal-up">
+                    <div class="project-glow"></div>
+                    <div class="project-header">
+                        <div class="project-icon">🤖</div>
+                        <div class="project-links">
+                            <a href="https://github.com/VishnuVardhanKosuru/Bam" target="_blank" rel="noopener"
+                                class="icon-link" title="GitHub">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3>BAM Chatbot</h3>
+                    <p class="project-year">2024</p>
+                    <p class="project-desc">A personalized AI chatbot powered by the <strong>Gemini API</strong> for
+                        natural language processing and content generation. Features voice interaction capabilities
+                        using <strong>gTTS (Google Text-to-Speech)</strong> for an immersive, interactive user
+                        experience.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Gemini API</span>
+                        <span class="tag">gTTS</span>
+                        <span class="tag">NLP</span>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card reveal-up">
+                    <div class="project-glow project-glow-2"></div>
+                    <div class="project-header">
+                        <div class="project-icon">👁️</div>
+                        <div class="project-links">
+                            <a href="https://github.com/VishnuVardhanKosuru?tab=repositories" target="_blank"
+                                rel="noopener" class="icon-link" title="GitHub">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3>Facelog</h3>
+                    <p class="project-year">2024 — Automated Attendance Tracking</p>
+                    <p class="project-desc">An automated attendance tracking system using <strong>deep learning face
+                            detection</strong> with the <strong>MobileNetV2</strong> architecture. Incorporated
+                        hyperparameter tuning and data augmentation techniques to enhance model accuracy and robustness.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Deep Learning</span>
+                        <span class="tag">MobileNetV2</span>
+                        <span class="tag">Computer Vision</span>
+                    </div>
+                </div>
+
+                <div class="project-card glass-card reveal-up">
+                    <div class="project-glow project-glow-3"></div>
+                    <div class="project-header">
+                        <div class="project-icon">🚀</div>
+                        <div class="project-links">
+                            <a href="https://github.com/VishnuVardhanKosuru/FullStackAngular-Space" target="_blank"
+                                rel="noopener" class="icon-link" title="GitHub">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3>FullStack Angular Space</h3>
+                    <p class="project-year">Full-Stack Web Application</p>
+                    <p class="project-desc">A full-stack web application built with Angular, showcasing modern frontend
+                        architecture with backend integration and responsive design principles.</p>
+                    <div class="project-tags">
+                        <span class="tag">Angular</span>
+                        <span class="tag">Full-Stack</span>
+                        <span class="tag">TypeScript</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="section">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">Research</span>
+                <h2 class="section-title">Publications</h2>
+            </div>
+            <div class="publications-list">
+
+                <!-- 2025 paper: not yet listed on IEEE -->
+                <div class="pub-card glass-card reveal-up">
+                    <div class="pub-year">2025</div>
+                    <div class="pub-content">
+                        <h3>Developing a Geriatric Depression Chatbot: A Technological Approach for Elderly Mental
+                            Health Support</h3>
+                        <p class="pub-venue">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+                            </svg>
+                            International Conference on Computing, Communication and Networking Technologies (ICCCNT) —
+                            IIT Indore
+                        </p>
+                        <span class="pub-pending-label">📋 Accepted — IEEE listing pending</span>
+                    </div>
+                </div>
+
+                <!-- 2024 paper: ICECA -->
+                <a href="https://ieeexplore.ieee.org/abstract/document/10800778" target="_blank" rel="noopener"
+                    class="pub-card pub-card-link glass-card reveal-up">
+                    <div class="pub-year">2024</div>
+                    <div class="pub-content">
+                        <h3>Contrastive Representation Learning for Multimodal Single-Cell RNA-Seq Data Integration</h3>
+                        <p class="pub-venue">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+                            </svg>
+                            8th International Conference on Electronics, Communication, and Aerospace Technology (ICECA)
+                            — RVS Technical Campus, Coimbatore
+                        </p>
+                        <span class="pub-link-label">View on IEEE →</span>
+                    </div>
+                </a>
+
+                <!-- 2024 paper: ICCCNT IIT Mandi -->
+                <a href="https://ieeexplore.ieee.org/abstract/document/10726187" target="_blank" rel="noopener"
+                    class="pub-card pub-card-link glass-card reveal-up">
+                    <div class="pub-year">2024</div>
+                    <div class="pub-content">
+                        <h3>CTG-Based Fetal Health Prediction: A Comparative Study of Machine Learning Models</h3>
+                        <p class="pub-venue">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+                            </svg>
+                            International Conference on Computing, Communication and Networking Technologies (ICCCNT) —
+                            IIT Mandi
+                        </p>
+                        <span class="pub-link-label">View on IEEE →</span>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section section-dark">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">Credentials</span>
+                <h2 class="section-title">Certifications</h2>
+            </div>
+            <div class="certs-grid">
+
+                <a href="https://www.credly.com/badges/f696f119-1315-4124-a18b-68caede1e1d6/public_url" target="_blank"
+                    rel="noopener" class="cert-card glass-card reveal-up">
+                    <div class="cert-icon cert-google">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
+                                fill="#4285F4" />
+                            <path
+                                d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+                                fill="#34A853" />
+                            <path
+                                d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"
+                                fill="#FBBC05" />
+                            <path
+                                d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+                                fill="#EA4335" />
+                        </svg>
+                    </div>
+                    <div class="cert-info">
+                        <h3>Google Professional Cloud Architect</h3>
+                        <span class="cert-year">2025</span>
+                    </div>
+                    <div class="cert-arrow">→</div>
+                </a>
+
+                <!-- GCP Associate Cloud Engineer — badge e9b45d19 -->
+                <a href="https://www.credly.com/badges/e9b45d19-91f9-4ef8-9b1e-bca9ec581b5e/public_url" target="_blank"
+                    rel="noopener" class="cert-card glass-card reveal-up">
+                    <div class="cert-icon cert-google">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
+                                fill="#4285F4" />
+                            <path
+                                d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+                                fill="#34A853" />
+                            <path
+                                d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"
+                                fill="#FBBC05" />
+                            <path
+                                d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+                                fill="#EA4335" />
+                        </svg>
+                    </div>
+                    <div class="cert-info">
+                        <h3>Google Associate Cloud Engineer</h3>
+                        <span class="cert-year">2025</span>
+                    </div>
+                    <div class="cert-arrow">→</div>
+                </a>
+
+                <!-- HashiCorp Terraform Associate — badge 85e44e90 + proper Terraform T logo -->
+                <a href="https://www.credly.com/badges/85e44e90-7190-4d70-8c0e-ed6526e170f6/public_url" target="_blank"
+                    rel="noopener" class="cert-card glass-card reveal-up">
+                    <div class="cert-icon cert-hashicorp">
+                        <!-- Terraform official logo: purple diamond shape -->
+                        <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="60" height="60" rx="10" fill="#7B42BC" />
+                            <!-- Terraform T shape: left column + top bar -->
+                            <rect x="12" y="12" width="8" height="36" fill="white" />
+                            <rect x="12" y="12" width="36" height="8" fill="white" />
+                        </svg>
+                    </div>
+                    <div class="cert-info">
+                        <h3>HashiCorp Terraform Associate (003)</h3>
+                        <span class="cert-year">2025</span>
+                    </div>
+                    <div class="cert-arrow">→</div>
+                </a>
+
+                <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=7CF85EE7EF63199BA31C4816AE046A30B6E885E9DAEF9055AF7FF460D5A94336"
+                    target="_blank" rel="noopener" class="cert-card glass-card reveal-up">
+                    <div class="cert-icon cert-oracle">
+                        <!-- Oracle official logo -->
+                        <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="60" height="60" rx="8" fill="#C74634" />
+                            <text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle"
+                                font-family="Arial,sans-serif" font-weight="900" font-size="22" fill="white">O</text>
+                        </svg>
+                    </div>
+                    <div class="cert-info">
+                        <h3>Oracle APEX Cloud Developer Professional</h3>
+                        <span class="cert-year">2025</span>
+                    </div>
+                    <div class="cert-arrow">→</div>
+                </a>
+
+                <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=012779DA268CE650BC30BDF89CE87AA2F819286F624F89F8EA0AB07C6211F2BF"
+                    target="_blank" rel="noopener" class="cert-card glass-card reveal-up">
+                    <div class="cert-icon cert-oracle">
+                        <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="60" height="60" rx="8" fill="#C74634" />
+                            <text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle"
+                                font-family="Arial,sans-serif" font-weight="900" font-size="22" fill="white">O</text>
+                        </svg>
+                    </div>
+                    <div class="cert-info">
+                        <h3>Oracle Cloud Infrastructure AI Foundations Associate</h3>
+                        <span class="cert-year">2025</span>
+                    </div>
+                    <div class="cert-arrow">→</div>
+                </a>
+
+                <a href="https://www.coursera.org/account/accomplishments/specialization/84SUJTVQV8AP" target="_blank"
+                    rel="noopener" class="cert-card glass-card reveal-up">
+                    <div class="cert-icon cert-google">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
+                                fill="#4285F4" />
+                            <path
+                                d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+                                fill="#34A853" />
+                            <path
+                                d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"
+                                fill="#FBBC05" />
+                            <path
+                                d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+                                fill="#EA4335" />
+                        </svg>
+                    </div>
+                    <div class="cert-info">
+                        <h3>Google Data Analyst</h3>
+                        <span class="cert-year">2023</span>
+                    </div>
+                    <div class="cert-arrow">→</div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section id="community" class="section">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">Leadership</span>
+                <h2 class="section-title">Community & Outreach</h2>
+            </div>
+            <div class="community-grid">
+
+                <div class="community-card glass-card reveal-left">
+                    <div class="community-icon">👨‍🏫</div>
+                    <div class="community-content">
+                        <h3>Team Leader — C++ Workshop (SSR Project)</h3>
+                        <span class="community-year">2023</span>
+                        <p>Guided and mentored a group of <strong>60 students</strong> during a workshop on C++,
+                            demonstrating effective leadership and communication skills. Managed a team of <strong>7
+                                members</strong>, strengthening collaboration and teamwork to ensure the smooth
+                            execution of the workshop.</p>
+                        <a href="https://www.linkedin.com/posts/vishnuvardhan4916_ssr-teamleadership-codeyourdreamswithcpp-activity-7179182009653555200-SrUO"
+                            target="_blank" rel="noopener" class="community-link">View on LinkedIn →</a>
+                    </div>
+                </div>
+
+                <div class="community-card glass-card reveal-right">
+                    <div class="community-icon">🤝</div>
+                    <div class="community-content">
+                        <h3>Volunteer — Amrita Sree Seva Help-Groups (Ayudh Club)</h3>
+                        <span class="community-year">2022</span>
+                        <p>Actively participated in a community service program and portrayed good team player
+                            abilities. Successfully managed a large group of people, along with fellow volunteers,
+                            ensuring all required instructions were followed.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-dark">
+        <div class="container">
+            <div class="contact-wrap reveal-up">
+                <span class="section-tag">Let's Connect</span>
+                <h2 class="section-title">Glad we could cross paths.</h2>
+                <p class="contact-sub">I hope it left you with a bit of curiosity and inspiration.</p>
+
+                <!-- Like Counter -->
+                <div class="like-section" id="likeSection">
+                    <p class="like-prompt">If this portfolio inspires you, please leave a like!</p>
+                    <div class="like-btn-wrap">
+                        <button class="like-btn" id="likeBtn" aria-label="Like this portfolio">
+                            ❤️
+                        </button>
+                        <span class="like-count" id="likeCount">0</span>
+                        <span class="like-label">likes</span>
+                    </div>
+                </div>
+
+                <div class="contact-links">
+                    <a href="mailto:vishnu4916@gmail.com" class="contact-card glass-card">
+                        <div class="contact-card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                        </div>
+                        <span>vishnu4916@gmail.com</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/vishnuvardhan4916/" target="_blank" rel="noopener"
+                        class="contact-card glass-card">
+                        <div class="contact-card-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                <rect x="2" y="9" width="4" height="12" />
+                                <circle cx="4" cy="4" r="2" />
+                            </svg>
+                        </div>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/VishnuVardhanKosuru" target="_blank" rel="noopener"
+                        class="contact-card glass-card">
+                        <div class="contact-card-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                            </svg>
+                        </div>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>Designed &amp; Built by <strong>Vishnu Vardhan Kosuru</strong> using <strong>Antigravity</strong> · 2026
+            </p>
+
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>

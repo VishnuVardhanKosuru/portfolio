@@ -1,0 +1,18 @@
+{
+  "name": "vishnu-vardhan-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio site for Vishnu Vardhan Kosuru",
+  "scripts": {
+    "dev:qa": "ENV=qa node scripts/serve.js",
+    "dev:uat": "ENV=uat node scripts/serve.js",
+    "dev:prod": "ENV=production node scripts/serve.js",
+    "build:qa": "ENV=qa node scripts/build.js",
+    "build:uat": "ENV=uat node scripts/build.js",
+    "build:prod": "ENV=production node scripts/build.js",
+    "serve:prod": "ENV=production node scripts/serve.js"
+  },
+  "keywords": ["portfolio", "vishnu", "engineer"],
+  "author": "Vishnu Vardhan Kosuru",
+  "license": "MIT",
+  "devDependencies": {}
+}
